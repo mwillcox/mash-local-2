@@ -1,0 +1,1536 @@
+/*=========================================
+  GUI v2.1 SEOshop Group B.V.
+=========================================*/
+.gui {
+  position: relative;
+}
+.test{
+}
+.gui * {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+}
+.gui-clearfix:before,
+.gui-clearfix:after {
+  content: " ";
+  display: table;
+}
+.gui-clear,
+.gui-clearfix:after {
+  clear: both;
+}
+.gui-clearfix {
+  *zoom: 1;
+}
+.gui table {
+  width: 100%;
+  border-spacing: 0;
+  empty-cells: show;
+}
+
+/* text */
+.gui .gui-align-center {
+  text-align: center;
+}
+.gui .gui-align-left {
+  text-align: left;
+}
+.gui .gui-align-right {
+  text-align: right;
+}
+.gui .gui-big {
+  font-size: 16px;
+}
+.gui .gui-small {
+  font-size: 90%;
+}
+.gui a.gui-bold {
+  color: #333333;
+}
+
+/* headings */
+.gui-page-title,
+.gui h1,
+.gui h2,
+.gui h3,
+.gui h4,
+.gui h5,
+.gui h6 {
+  line-height: 1.2125em;
+  margin-top: -0.2em;
+  margin-bottom: 20px;
+}
+.gui-page-title,
+.gui h1 { font-size: 1.6875em; }
+.gui h2 { font-size: 1.4375em; }
+.gui h3 { font-size: 1.375em; }
+.gui h4 { font-size: 1.375em; }
+.gui h5 { font-size: 1.375em; }
+.gui h6 { font-size: 1.375em; }
+@media (max-width: 767px) {
+  .gui-page-title,
+  .gui h1 { font-size: 1.475em; }
+  .gui h2 { font-size: 1.375em; }
+}
+
+/* border-radius */
+.gui a.gui-button-large,
+.gui a.gui-button-small,
+.gui-block,
+.gui-block.gui-closed .gui-block-title,
+.gui-block-option,
+.gui-block-option img.gui-border,
+.gui-block-option-block,
+.gui-block-title span,
+.gui-image,
+.gui-input,
+.gui-text,
+.gui-messages ul,
+.messages ul,
+.gui-number,
+.gui-popover,
+.gui-popover-bg,
+.gui-popover-content,
+.gui-popover-title a,
+.gui-select,
+.gui-table {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.gui-block-content .gui-mask,
+.gui-block-content {
+  -webkit-border-radius: 0px 0px 2px 2px;
+  -moz-border-radius: 0px 0px 2px 2px;
+  border-radius: 0px 0px 2px 2px;
+}
+.gui-block-title {
+  -webkit-border-radius: 2px 2px 0px 0px;
+  -moz-border-radius: 2px 2px 0px 0px;
+  border-radius: 2px 2px 0px 0px;
+}
+
+/* others */
+.gui-left {
+  float: left;
+}
+.gui-right {
+  float: right;
+}
+.gui-line {
+  height: 1px;
+  margin: 15px -15px;
+  background: #CCCCCC;
+}
+.gui-borderline {
+  height: 1px;
+  margin: 15px 0;
+  background: #CCCCCC;
+}
+.gui-nowrap {
+  white-space: nowrap;
+}
+.gui-small {
+  font-size: 90%;
+}
+.gui-spacer {
+  height: 30px;
+}
+.gui-spacer-small {
+  height: 15px;
+}
+.gui-strike {
+  text-decoration: line-through;
+}
+.gui-valign-bottom {
+  vertical-align: bottom;
+}
+.gui-valign-middle {
+  vertical-align: middle;
+}
+.gui-valign-top {
+  vertical-align: top;
+}
+
+/* hide elements */
+.gui-col2-right .gui-col2-right-col1.gui-checkout-steps {
+  width: 100%;
+  float: none;
+}
+input[type="hidden"].gui-hide,
+input[type="password"].gui-hide,
+input[type="email"].gui-hide,
+input[type="text"].gui-hide,
+textarea.gui-hide,
+select.gui-hide,
+button.gui-hide,
+input[type="submit"].gui-hide,
+input[type="reset"].gui-hide,
+input[type="button"].gui-hide,
+.gui-hide,
+.gui-col2-right-col2.gui-checkout-progress {
+  display: none;
+}
+
+.gui-invisible {
+  visibility: hidden;
+}
+
+/* font-weight */
+.gui a.gui-button-facebook,
+.gui-login .gui-content-title,
+.gui-block-title span,
+.gui-block-subtitle,
+.gui-content-subtitle,
+.gui-block-linklist li.gui-active a,
+.gui-form .gui-radio span,
+.gui-popover-title,
+.gui-popover-title a,
+.gui-progressbar ul li.gui-active a,
+.gui-progressbar ul li.gui-done a,
+.gui-blog-commentlist header cite,
+.gui-banner,
+.gui a.gui-bold,
+.gui-page-title,
+.gui h1,
+.gui h2,
+.gui h3,
+.gui h4,
+.gui h5,
+.gui h6,
+.gui-table thead tr th,
+.gui strong {
+  font-weight: 600;
+}
+
+/* links
+_________________________*/
+.gui a {
+  color: #949494;
+  text-decoration: none;
+  outline: 0;
+}
+
+/* Action buttons */
+.gui a.gui-action {
+  display: block;
+  width: 16px;
+  height: 16px;
+  text-indent: -9999px;
+  background: url(gui-actions.png);
+}
+.gui a.gui-action-delete {
+  background-position: 0 -32px;
+}
+.gui a.gui-action-min {
+  background-position: 0 -16px;
+}
+.gui a.gui-action-plus {
+  background-position: 0 0;
+}
+
+/* Facebook */
+.gui a.gui-button-facebook {
+  display: inline-block;
+  padding: 0 0 0 1px;
+  margin: 3px 0;
+  font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  cursor: pointer;
+  background: url(gui-button-facebook.png) 0 -188px #29447E;
+  background-position: left -188px;
+  text-decoration: none;
+}
+.gui a.gui-button-facebook span {
+  display: block;
+  padding: 2px 6px 3px;
+  margin: 1px 1px 0 21px;
+  color: #FFFFFF;
+  background: url(gui-button-facebook.png) 0 0 #5F78AB;
+  border-top: 1px solid #879AC0;
+  border-bottom: 1px solid #1A356E;
+}
+.gui a.gui-button-facebook:active {
+  background-position: left -210px;
+}
+.gui a.gui-button-facebook:active span {
+  background: #4F6AA3;
+  border-top: 1px solid #45619D;
+  border-bottom: 1px solid #29447E;
+}
+.gui a.gui-button-facebook:hover {
+  text-decoration: none;
+}
+
+/* Buttons */
+.gui a.gui-button-large,
+.gui a.gui-button-small {
+  display: inline-block;
+  background-color: #F8F8F8;
+  color: #333333;
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid #CCCCCC;
+  text-decoration: none;
+}
+.gui a.gui-button-large.gui-button-action {
+  color: white;
+  background-color: #1AD600;
+  border-color: #32B421;
+}
+.gui a.gui-button-large.gui-button-action:active {
+  background-color: #31C41D;
+  border-color: #2EA41F;
+}
+.gui a.gui-button-large {
+  line-height: 40px;
+  padding: 0 15px;
+}
+.gui a.gui-button-small {
+  line-height: 26px;
+  padding: 3px 15px;
+}
+.gui .gui-table a.gui-button-small {
+  font-size: inherit;
+}
+.gui a.gui-button-large.gui-button-disabled,
+.gui a.gui-button-small.gui-button-disabled {
+  color: #666666;
+  cursor: default;
+  background-color: #FFFFFF;
+  border: 1px solid #8D8D8D;
+  opacity: 0.5;
+}
+.gui a.gui-button-large:active,
+.gui a.gui-button-small:active {
+  background-color: #E4E4E4;
+  border-color: #B3B3B3;
+}
+.gui a.gui-button-large:hover,
+.gui a.gui-button-small:hover {
+  text-decoration: none;
+}
+.gui a.gui-button-link {
+  display: inline-block;
+  line-height: 28px;
+}
+.gui-buttons {
+  margin: 15px -15px 0px -15px;
+  padding: 0px 15px;
+}
+.gui-register .gui-buttons.gui-border {
+  border-top: 0px;
+  padding-top: 0px;
+}
+.gui-div-cart-block-related .gui-buttons,
+.gui-account-cart .gui-buttons,
+.gui-account-compare .gui-buttons {
+  margin: 0px;
+}
+.gui-buttons .gui-left {
+  font-size: 90%;
+}
+.gui-buttons .gui-right {
+  margin-left: 15px;
+}
+.gui-buttons.gui-buttons-large .gui-button-link {
+  margin: 7px 0;
+}
+.gui-buttons.gui-border {
+  padding-top: 15px;
+  border-top: 1px solid #CCCCCC;
+}
+.gui-checkout-steps .gui-buttons.gui-border {
+  border: 0px;
+}
+
+/* Gui-products / related
+_________________________*/
+.gui ul.gui-products {
+  list-style-type: none;
+}
+.gui ul.gui-products li,
+.gui-block-productlist li {
+  border-bottom: 1px solid #DDDDDD;
+  padding: 15px;
+  line-height: 20px;
+  position: relative;
+  clear: both;
+}
+.gui ul.gui-products li:before,
+.gui ul.gui-products li:after,
+.gui-block-productlist li:before,
+.gui-block-productlist li:after {
+  content: " ";
+  display: table;
+}
+.gui ul.gui-products li:after,
+.gui-block-productlist li:after {
+  clear: both;
+}
+.gui ul.gui-products li:last-child,
+.gui-block-productlist li:last-child {
+  border: 0;
+}
+.gui ul.gui-products li .gui-products-image,
+.gui-block-productlist li .gui-block-productlist-image {
+  float: left;
+  margin-right: 15px;
+}
+.gui ul.gui-products li .gui-products-title {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.gui ul.gui-products li .gui-products-title a {
+  color: #333333;
+  text-decoration: none;
+}
+.gui ul.gui-products li .gui-products-info {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 90%;
+  float: left;
+}
+.gui ul.gui-products li .gui-products-price {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 90%;
+  margin-left: 10px;
+  float: right;
+  margin-right: 27px;
+}
+.gui ul.gui-products li .gui-products-option,
+.gui-block-productlist li .gui-block-productlist-option {
+  float: right;
+  height: 12px;
+  width: 12px;
+  line-height: 0px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -6px;
+}
+.gui ul.gui-products li .gui-products-unitprice {
+  clear: both;
+  padding-left: 58px;
+}
+.gui-products-unitprice,
+.gui-block-productlist li .gui-unitprice {
+ font-size: 90%;
+}
+
+/* Gui-blocks
+_________________________*/
+.gui-block {
+  border: 1px solid #CCCCCC;
+}
+
+/* variants */
+.gui-block.gui-margin {
+  margin: 30px 0px;
+}
+.gui-block-disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+/* block-content */
+.gui-block-content {
+  padding: 15px;
+}
+.gui-block-content.gui-white {
+  background: #FFFFFF;
+}
+.gui-block-highlight .gui-block-content .gui-table {
+  padding-bottom: 0px;
+}
+.gui-thankyou .gui-block-content .gui-table {
+  margin-bottom: 30px;
+}
+.gui-thankyou .gui-spacer {
+  display: none;
+}
+.gui-div-cart-block-related .gui-block-content,
+.gui-account-cart .gui-block-content,
+.gui-account-compare .gui-block-content {
+  padding: 0px 0px 15px 0px;
+}
+/* block-inner */
+.gui-block-inner {
+  height: 38px;
+  padding: 0 15px;
+  font-size: 90%;
+  line-height: 38px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.gui-block-inner a {
+  float: right;
+}
+.gui-block-inner strong {
+  float: left;
+  color: #666666;
+}
+.gui-block-inner strong a {
+  float: none;
+  color: #666666;
+}
+
+/* options */
+.gui-block-option {
+  padding: 10px 15px;
+  background: #FAFAFA;
+  border: 1px solid #EEEEEE;
+}
+.gui-block-option img.gui-border {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+.gui-block-option-block {
+  padding: 15px;
+  margin: 15px 15px 0 15px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+
+/* block-subcontent */
+.gui-block-subcontent {
+  padding-top: 10px;
+  line-height: 16px;
+}
+
+/* block-title */
+.gui-content-title,
+.gui-block-title {
+  color: #333333;
+}
+.gui-block-title {
+  background-color: #FAFAFA;
+}
+.gui-checkout .gui-shipment-method-form {
+  display: none;
+}
+.gui-checkout.gui-checkout-details .gui-block-title {
+  display: none;
+}
+gui-content-title {
+  background-color: transparent;
+}
+.gui-block-title {
+  padding: 8px 15px;
+  border-bottom: 1px solid #CCCCCC;
+  overflow: hidden;
+}
+.gui-block.gui-closed .gui-block-title {
+  border: 0;
+}
+.gui-block-title a {
+  float: right;
+  font-size: 90%;
+}
+.gui-block-title span {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin: 11px 10px 11px 0;
+  font-size: 90%;
+  line-height: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: none;
+  background: #76C61B;
+}
+.gui-block-title strong {
+  float: left;
+  color: #333333;
+}
+.gui-block-title strong a {
+  float: none;
+  color: #333333;
+}
+.gui-block-title.gui-dark span {
+  background: #333333;
+}
+.gui-block-title.gui-dark strong,
+.gui-block-title.gui-dark strong a {
+  color: #333333;
+}
+.gui-block-title.gui-transparent span,
+.gui-block-title.gui-transparent strong {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* block-subtitle */
+.gui-block-subtitle,
+.gui-content-subtitle {
+  line-height: 1.5;
+}
+.gui-content-subtitle {
+  border-bottom: 1px solid #CCCCCC;
+}
+.gui-block-subtitle a {
+  float: right;
+  font-weight: normal;
+}
+.gui-block-subtitle.gui-transparent {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* content */
+.gui-content-wysiwyg {
+  margin: 5px 0;
+  font-size: 13px;
+}
+.gui-content-wysiwyg ul {
+  margin-left: 20px;
+}
+
+/* Unordered list
+_________________________*/
+.gui-list {
+  color: #333333;
+}
+.gui-list ul {
+  list-style-type: none;
+}
+.gui-list ul li {
+  padding-left: 10px;
+  background: url(gui-arrow.png) 0 2px no-repeat;
+}
+.gui-list ul li a {
+  color: #666666;
+}
+
+/* linklist */
+.gui-block-linklist,
+.gui-block-productlist {
+  list-style-type: none;
+}
+.gui-block-linklist li {
+  border-bottom: 1px solid #DDDDDD;
+}
+.gui-block-linklist li a {
+  display: block;
+  overflow: hidden;
+  color: #333333;
+  padding: 10px 0px;
+}
+.gui-block-linklist li:last-child,
+.gui-block-productlist li:last-child {
+  border: 0;
+}
+
+/* productlist */
+.gui-block-productlist li .gui-block-productlist-text {
+  overflow: hidden;
+  line-height: 22px;
+}
+.gui-block-productlist li .gui-block-productlist-text a {
+  white-space: nowrap;
+}
+.gui-block-productlist li.large {
+  margin-bottom: 15px;
+}
+
+/* cart summary
+_________________________*/
+.gui-cart-sum .gui-big {
+  font-size: 120%;
+  margin-bottom: 30px;
+}
+.gui-cart-sum .gui-line {
+  height: 1px;
+  margin: 15px 0;
+  background: #CCCCCC;
+}
+.gui-cart-sum .gui-item .gui-desc {
+  float: left;
+  width: 60%;
+  text-align: right;
+}
+.gui-cart-sum .gui-item .gui-option {
+  float: left;
+  width: 5%;
+  padding: 2px 0 2px 15px;
+}
+.gui-cart-sum .gui-item .gui-price {
+  float: right;
+  width: 25%;
+  text-align: right;
+}
+.gui-cart-sum .gui-action.gui-action-delete {
+  margin-top: 6px;
+}
+.gui-div-cart-sum .gui-button-large.gui-button-action {
+  display: block;
+}
+
+.gui-cart .checkout-delivery-time {
+  font-size: 10px;
+}
+
+.gui-cart .gui-bundle {
+  padding-top: 10px;
+}
+
+.gui-cart .gui-bundle span {
+  float: left;
+  height: 44px;
+  line-height: 44px;
+  font-weight: bold;
+  padding: 0 5px 0;
+}
+.gui-cart .gui-bundle .gui-image {
+  float: left;
+  margin-bottom: 10px;
+}
+
+/* Grid
+_________________________*/
+.gui-col2-big .gui-col2-big-col1 {
+  float: left;
+  width: 55%;
+}
+.gui-col2-big .gui-col2-big-col2 {
+  float: right;
+  width: 40%;
+}
+.gui-col2-equal .gui-col2-equal-col1 {
+  float: left;
+  width: 48.5%;
+}
+.gui-col2-equal .gui-col2-equal-col2 {
+  float: right;
+  width: 48.5%;
+}
+.gui-col2-left .gui-col2-left-col1 {
+  float: left;
+  width: 25%;
+}
+.gui-col2-left .gui-col2-left-col2 {
+  float: right;
+  width: 72%;
+}
+.gui-col2-leftm .gui-col2-leftm-col1 {
+  float: left;
+  width: 37%;
+}
+.gui-col2-leftm .gui-col2-leftm-col2 {
+  float: right;
+  width: 60%;
+}
+.gui-col2-right .gui-col2-right-col1 {
+  float: left;
+  width: 72%;
+}
+.gui-col2-right .gui-col2-right-col2 {
+  float: right;
+  width: 25%;
+}
+.gui-col2-rightm .gui-col2-rightm-col1 {
+  float: left;
+  width: 60%;
+}
+.gui-col2-rightm .gui-col2-rightm-col2 {
+  float: right;
+  width: 37%;
+}
+.gui-col3-center .gui-col3-center-col1 {
+  float: left;
+  width: 25%;
+  margin-right: 3%;
+}
+.gui-col3-center .gui-col3-center-col2 {
+  float: left;
+  width: 44%;
+}
+.gui-col3-center .gui-col3-center-col3 {
+  float: right;
+  width: 25%;
+}
+.gui-col3-equal .gui-col3-equal-col1 {
+  float: left;
+  width: 30%;
+  margin-right: 3%;
+}
+.gui-col3-equal .gui-col3-equal-col2 {
+  float: left;
+  width: 30%;
+}
+.gui-col3-equal .gui-col3-equal-col3 {
+  float: right;
+  width: 34%;
+}
+
+/* form
+_________________________*/
+.gui-form .gui-checkbox input,
+.gui-form .gui-radio input {
+  float: left;
+  margin-right: 10px;
+  width: auto;
+}
+.gui-form .gui-checkbox label,
+.gui-form .gui-radio label {
+  display: table-cell;
+  cursor: pointer;
+  line-height: 14px;
+  padding-bottom: 15px;
+  word-break: normal;
+}
+.gui-form .gui-field {
+  clear: both;
+}
+#gui-form-login .gui-field {
+  padding-bottom: 15px;
+}
+.gui-checkout-shipment .gui-radio label,
+.gui-checkout-payment .gui-radio label,
+#gui-form-shipping .gui-radio label,
+.gui-form .gui-field:last-child gui-checkbox label,
+.gui-form .gui-field:last-child gui-radio label {
+  padding-bottom: 0px;
+}
+#gui-form-shipping .gui-radio label {
+  height: auto;
+}
+.gui-form .gui-radio .gui-options .gui-option {
+  float: left;
+}
+.gui-form .gui-radio span {
+  display: block;
+  padding-left: 22px;
+  color: #333333;
+}
+.gui-form .gui-error .gui-input,
+.gui-form .gui-error .gui-select,
+.gui-form .gui-error .gui-text {
+  border-color: #C80805;
+}
+.gui-form .gui-error .gui-message {
+  display: block;
+}
+.gui-form .gui-error .gui-select .gui-handle {
+  border-left: 1px solid #C80805;
+}
+.gui-form .gui-field .gui-description {
+  padding-left: 23px;
+  font-size: 90%;
+  clear: both;
+}
+.gui-form .gui-field .gui-description span {
+  color: #333333;
+}
+.gui-field-content {
+  padding-left: 22px;
+  position: relative;
+  font-size: 90%;
+  margin-top: 10px;
+}
+.gui-form .gui-message {
+  display: none;
+  height: 20px;
+  font-size: 90%;
+  line-height: 20px;
+  color: #C80805;
+}
+.gui-form .gui-spacer {
+  height: 15px;
+}
+.gui-form label {
+  padding-right: 15px;
+  line-height: 30px;
+  color: #333333;
+}
+.gui-form label.gui-label-text {
+  font-weight: normal;
+  line-height: 20px;
+  padding: 5px 15px 5px 0;
+}
+.gui-form label em {
+  font-style: normal;
+  color: #DD3C10;
+}
+.gui-form label span {
+  color: #666666;
+}
+.gui-form label span.gui-nostyle {
+  color: #333333;
+}
+.gui-form .gui-no-validate label em {
+  display: none;
+}
+.gui-form .gui-field-info {
+  padding-top: 35px;
+  font-size: 90%;
+}
+
+/* input */
+.gui-input,
+.gui-text {
+  position: relative;
+  border: 1px solid #CCCCCC;
+  overflow: hidden;
+}
+.gui-input input,
+.gui-text textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  color: #333333;
+  padding: 0px 10px;
+  border: 0;
+  outline: none;
+  height: 32px;
+  background-color: transparent;
+}
+.gui-input input:focus,
+.gui-text textarea:focus {
+  border: 0px;
+}
+.gui-input.gui-focus,
+.gui-text.gui-focus {
+  border-color: #8D8D8D;
+}
+
+/* images */
+.gui-image {
+  border: 1px solid #CCCCCC;
+}
+.gui-image a img {
+  border: 0;
+}
+
+/* messages
+_________________________*/
+.gui-messages,
+.messages {
+  width: 100%;
+  font-size: 90%;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.gui-messages ul,
+.messages ul {
+  padding: 10px 15px;
+  color: #3B5998;
+  background: #ECEFF5;
+  list-style-type: none;
+  border: 1px solid #3B5998;
+}
+.gui-messages ul.gui-error {
+  color: #DD3C10;
+  border-color: #DD3C10;
+  background: #FCECE8;
+}
+.gui-messages ul.gui-success {
+  color: #609946;
+  border-color: #609946;
+  background: #EFF5ED;
+}
+.gui-messages ul.gui-warning {
+  color: #E2C822;
+  border-color: #E2C822;
+  background: #FCFAE9;
+}
+
+/* gui handle
+_________________________*/
+.gui-cart .gui-number {
+  width: 50px;
+}
+.gui-number {
+  position: relative;
+  height: 28px;
+  border: 1px solid #CCCCCC;
+}
+.gui-number.gui-focus .gui-handle {
+  border-color: #8D8D8D;
+}
+.gui-number.gui-focus {
+  border-color: #8D8D8D;
+}
+.gui-number .gui-handle {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  background: url(gui-sprite.png) right -92px no-repeat;
+  border-left: 1px solid #CCCCCC;
+}
+.gui-number .gui-handle a {
+  display: block;
+  width: 15px;
+  height: 13px;
+  text-indent: -9999px;
+  background: url(gui-sprite.png) no-repeat #FFFFFF;
+}
+.gui-number .gui-handle a.gui-down {
+  background-position: 0 -105px;
+}
+.gui-number .gui-handle a.gui-up {
+  background-position: 0 -92px;
+}
+.gui-number .gui-handle a:active {
+  background-color: #CCCCCC;
+}
+.gui-number .gui-value {
+  position: absolute;
+  right: 16px;
+  left: 0;
+  height: 100%;
+  padding: 0 5px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.gui-number .gui-value input {
+  width: 100%;
+  padding: 0px;
+  color: #333333;
+  font-size: 90%;
+  text-align: center;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  line-height: 26px;
+  height: 26px;
+}
+.gui-number .gui-value input:focus {
+  border: 0px;
+}
+
+/* Popover
+_________________________*/
+.gui-popover {
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  display: none;
+  width: 80%;
+  background: rgba(0,0,0,0.8);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+  z-index: 1;
+  border: 1px solid #CCCCCC;
+  border-radius: 0px 2px 2px 2px;
+}
+.gui-popover-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 55%;
+  height: 417px;
+  min-width: 400px;
+  max-width: 1024px;
+}
+.gui-popover-fluid {
+  left: auto;
+  top: -150px;
+  width: auto;
+  z-index: 1000;
+}
+.gui-popover-fluid .gui-popover-content .gui-scroll {
+  height: auto;
+}
+.gui-popover-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100 !important;
+  height: 100px;
+  background: #333333;
+  opacity: 0.8;
+}
+.gui-popover-content .gui-scroll {
+  height: 350px;
+  overflow: auto;
+}
+.gui-popover-content {
+  z-index: 1000 !important;
+  padding: 15px;
+  background: #FFFFFF;
+}
+.gui-popover-title {
+  height: 35px;
+  line-height: 35px;
+  color: #FFFFFF;
+  margin-left: 15px;
+}
+.gui-popover-title a {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin: 5px 0;
+  line-height: 20px;
+  color: #FFFFFF !important;
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+}
+.gui-popover-title strong {
+  float: left;
+}
+
+/* .Gui-select
+_________________________*/
+.gui-select {
+  font-size: 90%;
+  background-color: transparent !important;
+}
+.gui-select .gui-value,
+.gui-select .gui-handle {
+  display: none;
+}
+.gui-select select {
+  display: block;
+  max-width: inherit;
+  height: 32px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #CCCCCC;
+}
+
+/* .Gui-select
+_________________________*/
+.gui-table {
+  border: 1px solid #CCCCCC;
+  overflow: auto;
+}
+.gui-table a {
+  font-size: 90%;
+}
+.gui-table a.gui-bold {
+  text-decoration: none;
+  font-size: 100%;
+}
+.gui-table table {
+  border-collapse: collapse;
+}
+.gui-table tbody tr td {
+  padding: 15px 0px 15px 15px;
+  border-top: 1px solid #EEEEEE;
+}
+.gui-table tbody tr td:last-child {
+  padding-right: 15px;
+}
+.gui-table tbody tr:first-child td {
+  border: 0;
+}
+.gui-table thead tr th {
+  height: 40px;
+  padding-left: 15px;
+  line-height: 40px;
+  color: #333333;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #CCCCCC;
+}
+.gui-table thead tr th:last-child {
+  padding-right: 15px;
+}
+.gui-table tbody tr:last-child td {
+  border-color: #CCCCCC;
+}
+.gui-table.gui-orders tbody tr:last-child td {
+  border-color: #EEEEEE;
+}
+.gui-text textarea {
+  height: 65px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.gui-valign-bottom {
+  vertical-align: bottom;
+}
+.gui-valign-middle {
+  vertical-align: middle;
+}
+.gui-valign-top {
+  vertical-align: top;
+}
+
+/* Progressbar
+_________________________*/
+.gui-progressbar {
+  margin-bottom: 30px;
+  font-size: 90%;
+  border: 1px solid #CCCCCC;
+  border-left: 0px;
+  border-right: 0px;
+}
+.gui-progressbar .gui-indicator,
+.gui-progressbar .gui-cart {
+  display: none;
+}
+.gui-progressbar ul {
+  list-style: none;
+  height: 40px;
+  line-height: 40px;
+}
+.gui-progressbar ul li {
+  width: 25%;
+  float: left;
+  display: block;
+  text-align: center;
+}
+.gui-progressbar ul li a {
+  display: block;
+  margin: 0 10px;
+  color: inherit;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-decoration: none;
+}
+.gui-progressbar ul li a span {
+  width: auto;
+  margin-right: 5px;
+}
+.gui-progressbar ul li a span:after {
+  content: ".";
+}
+
+/* International addresses
+_________________________*/
+.gui-address-line2 {
+  display: none;
+}
+.gui-format-international .gui-address-line2 {
+  display: block;
+}
+.gui-format-international .gui-address-row-1 .gui-col2-equal-col1 {
+  width: 100%;
+}
+.gui-format-international .gui-address-row-1 .gui-col2-equal-col2 {
+  display: none;
+}
+.gui-format-international .gui-address-row-2 .gui-col2-equal-col1 {
+  float: right;
+}
+.gui-format-international .gui-address-row-2 .gui-col2-equal-col2 {
+  float: left;
+}
+
+/* blogs
+_________________________*/
+.gui-blog-article {
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #CCCCCC;
+  clear: both;
+}
+.gui-blog-article h1 {
+  font-size: 1.4375em;
+}
+.gui-blog-article h1 a {
+  color: #333333;
+}
+.gui-blog-article h1 a:hover {
+  color: #000000;
+}
+.gui-blog-article header img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  padding-bottom: 15px;
+  clear: both;
+}
+.gui-blog-article ul {
+  width: 100%;
+  list-style: none;
+  font-size: 90%;
+}
+.gui-blog-article header ul li {
+  float: left;
+  padding: 0 15px 0 0;
+  margin: 0px 15px 15px 0;
+  border-right: 1px solid #CCCCCC;
+}
+.gui-blog-article footer {
+  background-color: transparent;
+}
+.gui-blog-article ul li:last-child {
+  border-right: none;
+}
+.gui-blog-article.gui-last {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.gui-blog-article-comments {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.gui-blog-article-comments a:hover {
+  text-decoration: none;
+}
+.gui-blog-article-comments a:hover span {
+  text-decoration: none;
+  background-color: #000000;
+}
+.gui-blog-article-comments span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  background: url(gui-blog-comments.png) no-repeat #666666;
+  margin-top: -3px;
+}
+.gui-blog-article-content {
+  padding: 0 0 15px 0;
+  clear: both;
+}
+.gui-blog-comment-admin {
+  background: #F5F5F5;
+}
+.gui-blog-commentlist {
+  list-style: none;
+}
+.gui-blog-commentlist article {
+  position: relative;
+  padding: 20px 0 20px 64px;
+  border-bottom: 1px solid #CCCCCC;
+}
+.gui-blog-commentlist header {
+  height: 20px;
+}
+.gui-blog-commentlist header a {
+  float: right;
+  color: #666666;
+}
+.gui-blog-commentlist header cite {
+  color: #000000;
+}
+.gui-blog-commentlist header img {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.gui-blog-commentlist p {
+  padding: 10px 0 0 0;
+}
+.gui-blog-nav {
+  height: 20px;
+  padding: 15px 0;
+  border-top: 1px solid #CCCCCC;
+}
+.gui-blog-nav-next {
+  float: left;
+}
+.gui-blog-nav-previous {
+  float: right;
+}
+.gui-blog-social-addthis {
+  float: left;
+  width: 20px;
+  height: 16px;
+  padding: 2px 0;
+}
+.gui-blog-social-facebook {
+  float: left;
+  width: 140px;
+  height: 20px;
+}
+.gui-blog-social-google {
+  float: left;
+  width: 80px;
+  height: 20px;
+}
+.gui-blog-social-twitter {
+  float: left;
+  width: 110px;
+  height: 20px;
+}
+.gui-blogshort .gui-blog-article-image .gui-blog-article-content,
+.gui-blogshort .gui-blog-article-image footer,
+.gui-blogshort .gui-blog-article-image header {
+  width: 60%;
+  padding-left: 40%;
+}
+.gui-blogshort .gui-blog-article-image .gui-blog-article-content {
+  padding-top: 10px;
+}
+.gui-blogshort .gui-blog-article-image header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37%;
+}
+.gui-blogshort .gui-blog-social {
+  padding: 0 0 15px 0;
+}
+.gui-blog-article-more {
+  line-height: 20px;
+  font-size: 90%;
+}
+
+/* compare
+_________________________*/
+.gui-compare .gui-table {
+    overflow: auto;
+}
+.gui-compare .gui-column2 {
+    width: 50%;
+}
+.gui-compare .gui-column3 {
+    width: 33%;
+}
+.gui-compare .gui-column4 {
+    width: 25%;
+}
+.gui-compare img {
+  margin: auto;
+}
+.gui-select.gui-form-payed-by {
+  width: 100px !important;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/* others
+_________________________*/
+.gui-page-content {
+  padding-bottom: 30px;
+}
+.gui-login-new p {
+  height: 176px;
+}
+.gui-required,
+.gui-notice {
+  height: 16px;
+  margin-top: 10px;
+  font-size: 90%;
+  line-height: 16px;
+  text-align: right;
+}
+.gui-required {
+  color: #C80805;
+}
+.gui-input.gui-disabled,
+.gui-text.gui-disabled,
+.gui-select.gui-disabled {
+  opacity: 0.5;
+}
+.strict-submit{
+  margin-top: 15px;
+}
+.gui-col2-big-col1 p {
+  height: auto !important;
+}
+.gui-anchor {
+  display: block;
+  height: 20px;
+}
+.gui-banner {
+  margin-top: 15px;
+  text-align: center;
+}
+.gui-block-content .gui-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #333333;
+  opacity: 0.1;
+}
+
+/* Demobar
+_________________________*/
+.wsa-demobar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #FFF;
+  font-size: 14px;
+  z-index: 1000;
+  height: auto!important;
+  background: #414141!important;
+  box-shadow: none!important;
+  border-bottom: 0px !important;
+  line-height: 42px!important;
+  text-shadow: none!important;
+}
+.wsa-demobar a.link {
+  display: inline!important;
+  float: none!important;
+  width: auto!important;
+  height: auto!important;
+  text-indent: 0!important;
+  background: none!important;
+}
+.wsa-cookielaw {
+  height: auto !important;
+  white-space: inherit !important;
+}
+
+
+
+/* German law conform styles
+_____________________________*/
+
+
+.gui-block.gui-block-highlight .gui-block-title {
+    background-color: #76C61B;
+}
+
+.gui-block.gui-block-highlight .gui-block-title a{
+    text-shadow: none;
+    color:#3B5998;
+}
+
+.gui-block.gui-block-highlight .gui-block-content {
+    background-color: #F5F5F5;
+}
+.gui-block.gui-block-highlight .gui-buttons.gui-border {
+    border-color: #333;
+}
+
+.gui-block-highlight > .gui-table thead.gui-block-title > tr > th {
+    background: #76C61B;
+    border-radius: 0;
+}
+
+.gui-block-highlight .gui-item {
+    margin-right: 16px;
+}
+
+.gui-print {
+  margin: 5px;
+}
+
+.gui-print-icon {
+  background: url(gui-print-icon.png) no-repeat;
+  padding: 10px;
+  background-size: 20px;
+  float: right;
+  margin: 7px 0;
+}
+
+.gui-block-highlight .gui-confirm-buttons a.gui-button-small.gui-button-action,
+.gui-block-highlight .gui-block-content a.gui-button-large.gui-button-action {
+  background-color: #76C61B;
+  border-color: #32B421;
+}
+.gui-block-highlight .gui-block-content a.gui-button-small.gui-button-action:active,
+.gui-block-highlight .gui-block-content a.gui-button-large.gui-button-action:active {
+  background-color: #76C61B;
+  border-color: #2EA41F;
+}
+
+
+.gui-block-highlight .gui-confirm-buttons .button-holder {
+  border-top: 1px solid #32B421;
+  padding: 10px
+}

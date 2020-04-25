@@ -1,0 +1,865 @@
+/*
+	Theme: MASH SF
+	URL: http://mashsf.com
+	Author: Neil Tan - http://neiltan.net - hello@neiltan.net
+*/
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Home
+:: About
+:: Team
+:: Media
+:: Social
+:: Rides
+:: MASH X CINELLI
+:: News/Blog
+:: Contact
+:: Shopify Store 
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('https://www.mashsf.com/wp-content/themes/mashsf/fonts/BebasNeue-webfont.eot');
+    src: url('https://www.mashsf.com/wp-content/themes/mashsf/fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://www.mashsf.com/wp-content/themes/mashsf/fonts/BebasNeue-webfont.woff') format('woff'),
+         url('https://www.mashsf.com/wp-content/themes/mashsf/fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('https://www.mashsf.com/wp-content/themes/mashsf/fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* font-face */
+@font-face {
+  font-family: "SocialFoundicons";
+  src: url("https://www.mashsf.com/wp-content/themes/mashsf/fonts/social_foundicons.eot");
+  src: url("https://www.mashsf.com/wp-content/themes/mashsf/fonts/social_foundicons.eot?#iefix") format("embedded-opentype"), url("https://www.mashsf.com/wp-content/themes/mashsf/fonts/social_foundicons.woff") format("woff"), url("https://www.mashsf.com/wp-content/themes/mashsf/fonts/social_foundicons.ttf") format("truetype"), url("https://www.mashsf.com/wp-content/themes/mashsf/fonts/social_foundicons.svg#SocialFoundicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* global foundicon styles */
+[class*="foundicon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+[class*="foundicon-"]:before {
+  font-family: "SocialFoundicons";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+/* icons */
+.foundicon-facebook:before {
+  content: "\f003";
+}
+
+.foundicon-twitter:before {
+  content: "\f004";
+}
+
+.foundicon-vimeo:before {
+  content: "\f00f";
+}
+
+.foundicon-instagram:before {
+  content: "\f015";
+}
+
+.foundicon-tumblr:before {
+  content: "\f01a";
+}
+
+h1,h2,h3,h4{ font-family: 'BebasNeueRegular', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;}
+a{  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;}
+a:hover{text-decoration: none;  
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;}
+
+.space-1{margin-bottom:5% !important;}
+.space-2{margin-bottom:10% !important;}
+.space-3{margin-bottom:15% !important;}
+
+/*Text Color */
+.c-1{color:#fff;}
+.c-2{color:#000;}
+
+/*ABS Position - Positions*/
+.low-r{bottom:5px; right:20px; }
+.low-l{bottom:5px; left:20px;}
+.top-r{top:5px; right:20px;}
+.top-l{ top:5px; left:20px; } 
+
+/* Header */
+#header-wrap{ background:#000; margin:30px 0; height:40px; }
+#header-wrap a { color:#fff; font-weight: bold;}
+#header-wrap h1{margin:0;}
+#logo{position:relative;}
+#logo span{position:absolute;  z-index:100; display:block;}
+.shield{ height:70px; width:58px; background:url(https://www.mashsf.com/wp-content/themes/mashsf/images/shield-parallax.png) no-repeat 0 0; top:-12px; left:0; -webkit-background-size:58px 70px; background-size:58px 70px;}
+.mash{ height:0; width:88px; padding-top:22px; overflow:hidden; background:url(https://www.mashsf.com/wp-content/themes/mashsf/images/mash.png) no-repeat 0 0; top:9px; left:65px; -webkit-background-size:88px 21px; background-size:88px 21px;}
+
+/*.main-content{margin-bottom:25px;}
+*/
+/* Nav */
+#main-nav{ margin:0; }
+#main-nav li{ float:left; margin-left:10px; }
+#nav-wrap{ float:right;}
+
+/* Mobile Nav */
+.toggle-menu { display:none; background:url(https://www.mashsf.com/wp-content/themes/mashsf/images/mash-menu-icn.png) no-repeat 0 0; height:18px; width:13px;}
+body #jPanelMenu-menu{display: none; top:0px !important; background:#7f8c8d; width:250px !important; padding:0; -webkit-box-shadow: inset 2px 0px 5px 1px #434343; box-shadow: inset 2px 0px 5px 1px #434343; z-index: 2 !important;}
+#jPanelMenu-menu li.menu-item a{font-weight:bold; font-size: 14px; color:#fff; padding:10px 20px; border-bottom: 1px solid #95a5a6; display: block;}
+#jPanelMenu-menu li.menu-item .sub-menu{/*margin-bottom:8px;*/}
+#jPanelMenu-menu li.menu-item .sub-menu a{font-weight:normal; color:#fff;}
+
+#jPanelMenu-menu .sub-menu li a{border-bottom: 1px solid #95a5a6; display: block; padding: 10px 20px;}
+
+/* Sub Menu */
+#main-nav ul.sub-menu{ list-style:none; }
+#main-nav li{ position:relative; height:40px; }
+#main-nav li:hover{background:rgba(43,43,43,0.8); -webkit-transition: all 300ms ease; -moz-transition: all 300ms ease; -ms-transition: all 300ms ease; -o-transition: all 300ms ease; transition: all 300ms ease;}
+#main-nav li a{display:inline-block; padding:9px 7px;}
+#main-nav li ul.sub-menu{display:none; background-color: rgba(35, 35, 35, 0.9); position:absolute; top:40px; width:135px; padding:0; z-index:200; }
+#main-nav li ul.sub-menu li{ margin-left:0; clear:both; width:100%; height:30px;}
+#main-nav ul.sub-menu li a{ font-weight:normal; padding:5px 12px;}
+#main-nav li:hover ul.sub-menu{ display:block; left:0; color:#909; }
+#main-nav ul.sub-menu li:hover { background:#434343; cursor: pointer; 
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+/* Hero Image */
+.hero{ margin-top:-30px; margin-bottom:20px; position: relative;}
+.hero img{ width:100%;}
+
+/* Footer */
+#footer-wrap{ background:#000; }
+#footer-wrap a, .copyright{color:#fff; font-size:14px;}
+.copyright{text-align:center;}
+
+/* Footer - Twitter Feed */
+#twitter{width:100%; height:150px; color:#fff; background:url(https://www.mashsf.com/wp-content/themes/mashsf/images/mash-shield-lg.png) no-repeat 50% 0; -webkit-background-size:111px 130px; background-size:111px 130px; }
+#twitter p.tweet{text-align: center; padding-top:50px;}
+.twitter-cont{position:relative; margin-top:50px;}
+.twitter-cont img{position:absolute;}
+.twitter-cont img.tweet-logo{top:-20px; left:42%;}
+.twitter-cont img.mash-logo{top:30px; left:20%;}
+.twitter-handle{ position: absolute;top: 30px;right: 20%;}
+.twitter-handle a{font-size:16px;}
+
+/* Footer - Instagram Feed */
+#insta-feed{margin: 4% 0 0 -2%; color:#fff;}
+.instagram .instagram-placeholder, #mash-tuesday .instagram-placeholder{ float: left; width:12%;}
+.instagram .instagram-placeholder a img, #mash-tuesday .instagram-placeholder a img{width:90%;}
+
+/* Sponsors */
+/*
+.sponsors{ margin: 0 0 3% 10% !important; clear:both; width:90%;}
+.sponsors li{ float:left; margin:0 2% 0 0; width:10%;}
+.sponsors li:last-child{margin-right:0;}
+.sponsors li a{  display:inline-block; overflow:hidden;}
+.sponsors li a img{ max-width: 90%; }
+
+.sponsors li.incase, .sponsors li.giro, .sponsors li.sanmarco { margin-top:0.4%;}
+.sponsors li.continental{ margin:0.8% 2% 0 0.5%; } 
+*/
+
+/*.box img{ width:100% !important; display:block; }
+*/.box{ margin: 10px 0; }
+.test{position:relative;}
+
+/* Video Stuff */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* SHARE */
+.share{margin:15px 0;}
+#main-container h1{font-size:40px;}
+
+
+/*CART*/
+#nav-wrap{position: relative;}
+#header-wrap .cart{position: absolute; right: 0; top: -30px;}
+
+p.cartstatus{font-size:12px; color:#666 !important; font-family: "Helvetica",sans-serif !important; }
+p.cartstatus a{ text-decoration:none; color:#666 !important; font-weight:normal; background: url(https://www.mashsf.com/wp-content/themes/mashsf/images/cart.png) no-repeat -1px -1px; padding-left:20px;} 
+p.cartstatus a:hover{color:#434343; opacity:0.8; text-decoration: none;}
+
+/* -----------------------------------------
+   Home
+----------------------------------------- */
+.home .flex-viewport, #location .flex-viewport{overflow:hidden !important;}
+.home .flex-viewport li a img{outline:none;}
+.home .box {margin-bottom:20px; }
+.home .box a img{width:100%; outline:1px solid #dcdcdc;  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;}
+.home .box a img:hover{outline:3px solid #000; opacity:0.9;  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.home .box a img:active{ opacity:1; }
+
+/* Featured Post */
+.the-post{position: relative;}
+.the-post h1,.the-post h2{position: absolute; }
+.the-post h1{ top:5px; left:20px; color:#fff;}
+.the-post h2{ bottom:0; left:20px; }
+
+.home #masonry-container .box{position:relative;}
+.home #masonry-container .box h3{ position:absolute; z-index:80; font-size:20px;}
+
+/* -----------------------------------------
+   About
+----------------------------------------- */
+
+
+
+/* -----------------------------------------
+   Team
+----------------------------------------- */
+.page-template-team-page-php .main-content{ padding: 0 20px;}
+.single-team-member .flexslider{ border: none; margin-top:-30px; }
+.single-team-member .flexslider li{ margin-right:20px; }
+.single-team-member .flex-control-nav { bottom: -35px; }
+.single-team-member .post-nav{margin-top:20px;}
+.team-carousel{ margin-bottom:25px; }
+
+/* Members List */
+li.member{ /*border-right:1px solid #f1f1f1;*/ margin-bottom:20px;}
+li.member:last-child{ border-right:none; }
+li.member h3{ font-size:25px; text-align:center; margin:10px 0; padding-bottom: 20px; border-bottom:6px solid #f1f1f1; }
+li.member:hover h3{ border-color:#000; }
+li.member img{ 
+  width:100% !important;
+  opacity:1;
+  outline:1px solid #868686; 
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+li.member:hover img { 
+  outline: 5px solid #000;
+  opacity:0.8; 
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+li.member:active img{
+  opacity:1;
+}
+
+.connected a i{font-size:25px;}
+
+/* Buttons */
+.btn{padding: 12px 15px; background: #979797; color: #fff; display: inline-block; margin-top: 20px; font-weight: bold;  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;}
+
+.btn:hover{color:#fff; background: #000; cursor:pointer; -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.btn:active{ opacity:0.6; }
+
+/* Gallery */
+.gallery-list li a {display: inline-block;
+height: 90px;
+overflow: hidden; width:100%;}
+.gallery-list li a img{width:100% !important; opacity:0.8;  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;}
+.gallery-list li a img:hover{opacity:1;  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;}
+.gallery-list li{padding:0 5px 5px;}
+
+
+/* -----------------------------------------
+   Media
+----------------------------------------- */
+
+
+/*Wallpapers*/
+.wp-list li, .press-list li{margin-bottom:20px;}
+.wp-list li img, .press-list li img{width:100%; outline:1px solid #dcdcdc;}
+.wp-list li a, .press-list li a{margin-right:10px;}
+
+
+/*Photos*/
+.mash-gallery .columns{ padding: 0 5px 10px 5px; height: 120px; overflow: hidden; margin-bottom: 10px;}
+.mash-gallery a img{width:100%;}
+
+li.photoset{ margin-bottom:20px; height: 166px; }
+li.photoset:last-child{ border-right:none; }
+/*li.photoset h3{ text-align:center; margin:10px 0; padding-bottom: 50px; }*/
+li.photoset img{ 
+  width:100% !important;
+  opacity:1;
+  outline:1px solid #868686; 
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+li.photoset:hover img { 
+  outline: 5px solid #000;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+li.member:active img{
+  opacity:1;
+}
+
+/*Videos*/
+#main-video{margin-bottom:20px;}
+#thumbs li{position:relative; margin-bottom:15px;}
+#thumbs li a img{height:165px; width:100%; overflow:hidden;}
+#thumbs li a p, .photoset a p, .press-list li a h2{position: absolute;
+top: 10%;
+left: 10%;
+width: 80%;
+font-weight: normal;
+color: #fff;
+text-align: center;
+font-size: 25px;
+z-index:2;
+font-family: 'BebasNeueRegular', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+background: rgba(000,000,000,0.6);
+padding:5px;
+opacity:0.8;
+ -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+#thumbs li:hover p, .photoset a:hover p, .press-list li a:hover h2{ background:rgba(000,000,000,0.8); color:#4bf; 
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+/*Press*/
+.page-template-press-page-php .flexslider{overflow:hidden;}
+
+
+/* -----------------------------------------
+   Social
+----------------------------------------- */
+#social-box{ text-align:center; margin-bottom:60px; background: url(https://www.mashsf.com/wp-content/themes/mashsf/images/social.jpg) repeat 50% 0;}
+#social-box li{ background:rgba(43,43,43, 0.8); height:200px; -webkit-transition: background 300ms linear;
+-moz-transition: background 300ms linear;
+-ms-transition: background 300ms linear;
+-o-transition: background 300ms linear;
+transition: background 300ms linear;}
+#social-box li:hover{background: #000; cursor: pointer; -webkit-transition: background 300ms linear;
+-moz-transition: background 300ms linear;
+-ms-transition: background 300ms linear;
+-o-transition: background 300ms linear;
+transition: background 300ms linear;}
+#social-box li#fb:active{background: #4c66a4;}
+#social-box li#twit:active{background: #37bae7;}
+#social-box li#instagram:active{background: #517fa4;}
+#social-box li#vimeo:active{background: #37bae7;}
+
+#social-box li a{display:block;}
+#social-box li i{font-size:50px; color:#fff; margin-top: 60px; display:inline-block;}
+
+#instagram-feed{padding:0;}
+#instagram-feed .instagram-placeholder{ float:left; margin:0 5px 5px 0;}
+#instagram-feed .instagram-placeholder img{outline:1px solid #dcdcdc;  -webkit-transition: all 300ms ease;
+-moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;}
+#instagram-feed .instagram-placeholder img:hover{outline: 2px solid #000;  -webkit-transition: all 300ms ease;
+-moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;}
+a#more{ width:100%; text-align: center;}
+
+/* -----------------------------------------
+   Rides
+----------------------------------------- */
+
+.page-template-rides-page-php .main-content{ position:relative; padding-bottom:150px;}
+#pano{ width:1400px; height:489px; position:absolute; top:-30px; right:-240px; z-index:-1; opacity:0.2;}
+
+/* -----------------------------------------
+   MASH X CINELLI
+----------------------------------------- */
+.page-id-41285639629 .jPanelMenu-panel{ background:none;}
+.page-id-41285639629 #main-container{min-height:600px;}
+
+#mash-cinelli h1{ font-size:100px; color:#fff; text-align: center; margin-top:90px; text-shadow:1px 1px 5px #000;}
+#mash-cinelli p{color:#fff; background:rgba(000,000,000, 0.8); font-size:16px; padding:20px;}
+#mash-cinelli #frames li{margin-bottom:15%;}
+#mash-cinelli #frames li h2{color:#fff; font-size:35px; text-shadow:1px 1px 5px #000;}
+#mash-cinelli .share{margin-bottom:20px; opacity:0.5;-webkit-transition: opacity 300ms linear;
+-moz-transition: opacity 300ms linear;
+-ms-transition: opacity 300ms linear;
+-o-transition: opacity 300ms linear;
+transition: opacity 300ms linear;}
+#mash-cinelli .share:hover{ opacity:1;-webkit-transition: opacity 300ms linear;
+-moz-transition: opacity 300ms linear;
+-ms-transition: opacity 300ms linear;
+-o-transition: opacity 300ms linear;
+transition: opacity 300ms linear;}
+
+/*  BigVideo Styles 
+  You may need to adjust these styles to get this working right in your design. 
+*/
+#big-video-wrap{overflow:hidden;position:fixed;height:100%;width:100%;top:0;left:0;}
+#big-video-vid,#big-video-image{position:absolute;}
+#big-video-control-container{position:fixed;bottom:20px;padding: 0 20px;width:100%;
+  -webkit-transition-duration:0.6s;-moz-transition-duration:0.6s;-ms-transition-duration:0.6s;-o-transition-duration:0.6s;transition-duration:0.6s;}
+#big-video-control{width:100%;height:16px;position:relative;}
+#big-video-control-middle{margin: 0 56px 0 24px;}
+#big-video-control-bar{width:100%;height:16px;position:relative;cursor:pointer;}
+#big-video-control-progress{position:absolute;top:7px;height:3px;width:0%;background:#fff;}
+#big-video-control-track{position:absolute;top:8px;height:1px;width:100%;background:#fff;}
+#big-video-control-bound-left{left:0;}
+#big-video-control-bound-right{right:-1px}
+#big-video-control-track .ui-slider-handle {opacity:0;}
+#big-video-control-playhead{left:30%;}
+#big-video-control-play{position:absolute;top:0;left:0;height:16px;width:16px;background-image:url('bigvideo.png');}
+#big-video-control-timer{position:absolute;top:1px;right:0;color:#fff;font-size:11px;}
+#big-video-control-playhead,#big-video-control-bound-left,#big-video-control-bound-right{position:absolute;top:0;height:16px;width:1px;background:#fff;}
+#big-video-control .ui-slider-handle{border-left:solid 1px #fff; width:16px;height:16px;position:absolute;top:-8px;}
+.transparent{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity:0;opacity:0;}
+.vjs-big-play-button{display:none !important;}
+
+
+/* -----------------------------------------
+   News/Blog
+----------------------------------------- */
+.blog article img, .archive article img, .single article img{width: 100%;}
+.blogger-post-footer img{width:0 !important;}
+
+.widget{ margin-bottom:20px;}
+.widgettitle{font-size:22px; margin:10px 0 2px;}
+.post-title{margin:10px 0 2px;}
+.post-title a{ font-size:45px; color:#000;}
+.post-title a:hover{ color:#434343;}
+
+div.post-nav{margin:20px 0;}
+span.next{float:right;}
+
+.news .the-post a img{width:100%;}
+
+/** MW - removed for testing **/
+/* .navigation{ margin: 20px 0; float: right; } */
+
+article.post{border-bottom:3px solid #b3b3b3; padding:20px 0;}
+
+.post-comment{display:none;}
+
+/* -----------------------------------------
+   Contact
+----------------------------------------- */
+.page-template-contact-page-php #pano{bottom:0; left:0; opacity:0.1;} 
+.page-template-contact-page-php #main-container{ position:relative;}
+
+
+/* -----------------------------------------
+  SHOPIFY STORE
+----------------------------------------- */
+.product h3 a{font-size: 25px;}
+
+
+
+/* FANCY BOX 
+------------------------*/
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp
+{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  vertical-align: top;
+}
+
+.fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8020;
+}
+
+.fancybox-skin {
+  position: relative;
+  background: #f9f9f9;
+  color: #444;
+  text-shadow: none;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.fancybox-opened {
+  z-index: 8030;
+}
+
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.fancybox-outer, .fancybox-inner {
+  position: relative;
+}
+
+.fancybox-inner {
+  overflow: hidden;
+}
+
+.fancybox-type-iframe .fancybox-inner {
+  -webkit-overflow-scrolling: touch;
+}
+
+.fancybox-error {
+  color: #444;
+  font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 15px;
+  white-space: nowrap;
+}
+
+.fancybox-image, .fancybox-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.fancybox-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+  background-image: url('https://www.mashsf.com/wp-content/themes/mashsf/images/fancybox_sprite.png');
+}
+
+#fancybox-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -22px;
+  background-position: 0 -108px;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 8060;
+}
+
+#fancybox-loading div {
+  width: 44px;
+  height: 44px;
+  background: url('https://www.mashsf.com/wp-content/themes/mashsf/images/fancybox_loading.gif') center center no-repeat;
+}
+
+.fancybox-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 8040;
+}
+
+.fancybox-nav {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent url('https://www.mashsf.com/wp-content/themes/mashsf/images/blank.gif'); /* helps IE */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  z-index: 8040;
+}
+
+.fancybox-prev {
+  left: 0;
+}
+
+.fancybox-next {
+  right: 0;
+}
+
+.fancybox-nav span {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 34px;
+  margin-top: -18px;
+  cursor: pointer;
+  z-index: 8040;
+  visibility: hidden;
+}
+
+.fancybox-prev span {
+  left: 10px;
+  background-position: 0 -36px;
+}
+
+.fancybox-next span {
+  right: 10px;
+  background-position: 0 -72px;
+}
+
+.fancybox-nav:hover span {
+  visibility: visible;
+}
+
+.fancybox-tmp {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+  visibility: hidden;
+  max-width: 99999px;
+  max-height: 99999px;
+  overflow: visible !important;
+}
+
+/* Overlay helper */
+
+.fancybox-lock {
+  overflow: hidden;
+}
+
+.fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 8010;
+  background: rgba(0,0,0,0.9);
+}
+
+.fancybox-overlay-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.fancybox-lock .fancybox-overlay {
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+/* Title helper */
+
+.fancybox-title {
+  visibility: hidden;
+  font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  position: relative;
+  text-shadow: none;
+  z-index: 8050;
+}
+
+.fancybox-opened .fancybox-title {
+  visibility: visible;
+}
+
+.fancybox-title-float-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-bottom: -35px;
+  z-index: 8050;
+  text-align: center;
+}
+
+.fancybox-title-float-wrap .child {
+  display: inline-block;
+  margin-right: -100%;
+  padding: 2px 20px;
+  background: transparent; /* Fallback for web browsers that doesn't support RGBa */
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+  text-shadow: 0 1px 2px #222;
+  color: #FFF;
+  font-weight: bold;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.fancybox-title-outside-wrap {
+  position: relative;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.fancybox-title-inside-wrap {
+  padding-top: 10px;
+}
+
+.fancybox-title-over-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  background: #000;
+  background: rgba(0, 0, 0, .8);
+}
+
+.featured-products .four.column:nth-child(3n+1){
+  clear: left;
+}
+.featured-products #variant-select{
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.currency .cs-placeholder{line-height: 1em !important;}
+.currency .select-currency{
+    display: none;
+}
+
+.product p span.money{
+  color: inherit;
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) { 
+  li.product_link h3{ margin-bottom: 48px; }
+  
+  
+}
+
+/* Most Mobile Devices */
+@media only screen and (max-width: 767px) { 
+    .currency{
+      margin-top: -31px;
+      margin-left: -305px;      
+    }
+
+    #main-cont{padding:0 10px;}
+     
+    .toggle-menu{display:block; width: 25px; position: absolute; right:10px; top: 13px; -webkit-background-size: 18px 13px;}
+    #main-nav{ display:none; width:200px !important; background:#000; position:absolute; right:10px; top:30px; z-index:1; padding:10px;}
+    #main-nav li.menu-item{ clear:both; }
+    #main-nav li {margin-left:0;}
+    #main-nav li ul.sub-menu{display:block; position:relative; top:0; padding: 0 10px;}
+    body.single-team-member .flex-viewport{ overflow: hidden !important; }
+    .single-team-member .flexslider li{margin-right:0;}
+    .single-team-member  .flex-direction-nav{display:none;}
+
+    .gallery-list li a {display: inline-block; height: 90px; overflow: hidden; width:100%;}
+
+    #topNav .sf-menu { width: 100%; height: 29px;}
+    #topNav .sf-menu li{display:none;}
+    #topNav .sf-menu li:last-child{
+      display: block;   
+      position: absolute;
+      right: 11px;
+      float: none;
+      top: 40px;
+      z-index: 1;
+    }
+    #search-cont form{ padding: 0 15px;}
+    #searchresults {width: 100%;}
+    #searchresults li{width: 100% !important;}
+    
+    #insta-feed {
+      margin: 4% 0 0 3%;
+    }    
+}
+
+/*IPad*/
+@media screen and (device-width: 768px) and (device-height: 1024px) {
+  
+}
+
+@-moz-document url-prefix() {
+    .sponsors li a img{width:100px;}
+    .sponsors li.incase, .sponsors li.giro, .sponsors li.sanmarco, .sponsors li.continental {
+       margin-top: 1%;
+    }
+}
