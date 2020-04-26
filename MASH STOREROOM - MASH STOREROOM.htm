@@ -36,10 +36,11 @@
     <link rel="shortcut icon" href="https://cdn.shoplightspeed.com/shops/616120/themes/5025/assets/favicon.ico?20200222224824" type="image/x-icon"> 
 
     <link rel="stylesheet" href="./MASH STOREROOM - MASH STOREROOM_files/reset.css">
+
+
+    <!-- adding fontawesome -->
+   <script type="text/javascript" src="./MASH STOREROOM - MASH STOREROOM_files/all.js"></script>
     
-    <!-- MW adding bootstrap -->
-    <link rel="stylesheet" href="./MASH STOREROOM - MASH STOREROOM_files/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- end -->
     
     <link rel="stylesheet" href="./MASH STOREROOM - MASH STOREROOM_files/custom.css">
     
@@ -64,9 +65,9 @@
     
     <iframe id="pxcelframe" src="./MASH STOREROOM - MASH STOREROOM_files/t_.html" style="display: none;"></iframe><script async="" src="./MASH STOREROOM - MASH STOREROOM_files/58ff075da9dabe0012b03331.js"></script><script src="./MASH STOREROOM - MASH STOREROOM_files/underscore-min.js"></script>
     <script src="./MASH STOREROOM - MASH STOREROOM_files/jquery-1-9-1.js"></script>
-    <script src="./MASH STOREROOM - MASH STOREROOM_files/jquery-ui-1-10-1.js"></script>   
-    
-           
+    <script src="./MASH STOREROOM - MASH STOREROOM_files/jquery-ui-1-10-1.js"></script> 
+
+ 
     
 		    <script type="text/javascript" src="./MASH STOREROOM - MASH STOREROOM_files/infinite-scroll-pkgd-min.js"></script>
     <script type="text/javascript" src="./MASH STOREROOM - MASH STOREROOM_files/global.js"></script>
@@ -85,47 +86,49 @@
 <header class="ls-header">
   <div class="topnav ls-topnav">
     <div class="container">
-            <div class="left">
-                        <div class="currencies">
-                    <a href="https://shop.mashsf.com/session/currency/eur/" title="eur">
-            EUR
-          </a>
-           /                     <a href="https://shop.mashsf.com/session/currency/gbp/" title="gbp">
-            GBP
-          </a>
-           /                     <a href="https://shop.mashsf.com/session/currency/usd/" class="active" title="usd">
-            USD
-          </a>
-           /                     <a href="https://shop.mashsf.com/session/currency/aud/" title="aud">
-            AUD
-          </a>
-           /                     <a href="https://shop.mashsf.com/session/currency/cad/" title="cad">
-            CAD
-          </a>
-           /                     <a href="https://shop.mashsf.com/session/currency/jpy/" title="jpy">
-            JPY
-          </a>
-                            </div>
-              </div>
+            
             <div class="right">
+              <div class="currencies">
+                <a href="https://shop.mashsf.com/session/currency/eur/" title="eur">
+        EUR
+      </a>
+       /                     <a href="https://shop.mashsf.com/session/currency/gbp/" title="gbp">
+        GBP
+      </a>
+       /                     <a href="https://shop.mashsf.com/session/currency/usd/" class="active" title="usd">
+        USD
+      </a>
+       /                     <a href="https://shop.mashsf.com/session/currency/aud/" title="aud">
+        AUD
+      </a>
+       /                     <a href="https://shop.mashsf.com/session/currency/cad/" title="cad">
+        CAD
+      </a>
+       /                     <a href="https://shop.mashsf.com/session/currency/jpy/" title="jpy">
+        JPY
+      </a>
+                        </div>
         <a href="https://shop.mashsf.com/cart/" title="Cart" class="cart"> 
-          <span class="glyphicon glyphicon-shopping-cart"></span>
+          <span class="glyphicon glyphicon-shopping-cart"><i class="fas fa-shopping-cart"></i></span>
           0 Items - $0.00
         </a>
         <a href="https://shop.mashsf.com/account/" title="My account" class="my-account">
           <span class="glyphicon glyphicon-user"></span>
                     My account / Register
                   </a>
+
+
       </div>
     </div>
   </div>
   <div class="navigation container ls-navigation">
     <div class="align ls-align">
       <ul class="burger">
-        <img src="./MASH STOREROOM - MASH STOREROOM_files/hamburger.png" width="32" height="32" alt="Menu">
+        <i class="fas fa-bars fa-2x"></i>
+        <!-- <img src="./MASH STOREROOM - MASH STOREROOM_files/hamburger.png" width="32" height="32" alt="Menu"> -->
       </ul>
 
-              <div class="vertical logo">
+        <div class="vertical logo">
           <a href="https://shop.mashsf.com/" title="MASH STOREROOM">
             <img src="./MASH STOREROOM - MASH STOREROOM_files/logo.png" alt="MASH STOREROOM">
           </a>
@@ -134,15 +137,15 @@
       <nav class="nonbounce desktop vertical">
         <form action="https://shop.mashsf.com/search/" method="get" id="formSearch">
           <input type="text" name="q" autocomplete="off" value="">
-          <span onclick="$(&#39;#formSearch&#39;).submit();" title="Search" class="glyphicon glyphicon-search"></span>
+          <span onclick="$(&#39;#formSearch&#39;).submit();" title="Search" class="glyphicon glyphicon-search"><i class="fas fa-search fa-sm"></i></span>
         </form>
         <ul>
-          <li class="item home active">
-            <a class="itemLink" href="https://shop.mashsf.com/">Home</a>
+          <li class="item">
+            <a class="itemLink" href="https://shop.mashsf.com/mash-gear">Mash Gear</a>
           </li>
                               <li class="item sub">
             <a class="itemLink" href="https://shop.mashsf.com/accessories/" title="Accessories">Accessories</a>
-                        <span class="glyphicon glyphicon-play"></span>
+                        <span class="glyphicon glyphicon-play"><i class="fas fa-play"></i></span>
             <ul class="subnav" style="display: none;">
                             <li class="subitem">
                 <a class="subitemLink" href="https://shop.mashsf.com/accessories/bells/" title="Bells">Bells</a>
@@ -193,7 +196,7 @@
                       </li>
                     <li class="item sub hover">
             <a class="itemLink" href="https://shop.mashsf.com/clothing/" title="Clothing">Clothing</a>
-                        <span class="glyphicon glyphicon-play"></span>
+                        <span class="glyphicon glyphicon-play"><i class="fas fa-play"></i></span>
             <ul class="subnav" style="display: block;">
                             <li class="subitem">
                 <a class="subitemLink" href="https://shop.mashsf.com/clothing/shirts/" title="Shirts">Shirts</a>
@@ -223,7 +226,7 @@
                       </li>
                     <li class="item sub">
             <a class="itemLink" href="https://shop.mashsf.com/components/" title="Components">Components</a>
-                        <span class="glyphicon glyphicon-play"></span>
+                        <span class="glyphicon glyphicon-play"><i class="fas fa-play"></i></span>
             <ul class="subnav">
                             <li class="subitem">
                 <a class="subitemLink" href="https://shop.mashsf.com/components/drivetrains/" title="Drivetrains">Drivetrains</a>
@@ -263,17 +266,17 @@
                               </li>
                           </ul>
                       </li>
-                                                  <li class="footerbrands item"><a class="itemLink" href="https://shop.mashsf.com/brands/" title="Brands">Brands</a></li>
-                                        <li class="item"><a class="itemLink" href="https://shop.mashsf.com/clothing/" title="Clothing">Clothing</a></li>
-                    <li class="item"><a class="itemLink" href="https://shop.mashsf.com/accessories/" title="Accessories">Accessories</a></li>
+                                                  <li class="footerbrands item"><a class="itemLink" href="https://shop.mashsf.com/brands/" title="About">About</a></li>
+                                        <li class="item"><a class="itemLink" href="https://shop.mashsf.com/clothing/" title="Clothing">Videos</a></li>
+                    <li class="item"><a class="itemLink" href="https://shop.mashsf.com/accessories/" title="Accessories">News</a></li>
                   </ul>
-        <span class="glyphicon glyphicon-remove"></span>  
+        <span class="glyphicon glyphicon-remove"><i class="fas fa-times"></i></span>  
       </nav>
     </div>
   </div>
 </header>    
 
-    <div id="main-container" class="row">   
+<div id="main-container" class="row wrapper">   
       	<div class="large-12 columns">
         <div id="search-cont" class="desktop" style="padding: 10px 0 5px 0;">          
           <form action="https://shop.mashsf.com/search/" method="get" id="formSearch">

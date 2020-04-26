@@ -202,9 +202,9 @@ function sizing() {
 
 // logo
 function logoSize() {
-  if ($(window).width() < 767) {
-    var logoWith = $('.logo img').width();
-    logoWith = (logoWith * 0.8);
-    $('.logo img').width(logoWith);
-  }
+  // if ($(window).width() < 767) {
+  //   var logoWith = $('.logo img').width();
+  //   logoWith = (logoWith * 0.8);
+  //   $('.logo img').width(logoWith);
+  // }
 }
