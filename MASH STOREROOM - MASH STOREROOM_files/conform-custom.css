@@ -796,5 +796,21 @@ nav.desktop .item.hover .itemLink {
 }
 
 
+.featured-products li h3 {
+  font-size: 1.2em;
+}
+
+.variants {
+  margin-bottom: 0;
+}
+
+.variants .variant-selector {
+  padding: 2px;
+  height: 22px;
+  min-width: 17px;
+  font-size: 11px;
+}
+
+
 
 
